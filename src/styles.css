@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a,
+a:hover {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bg-lightblue {
+  background: #f6f9fc;
+}
+
+.bg-red {
+  background: #d64041;
+}
+
+.text-red {
+  color: #d64041;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.scroll .hero {
+  transform: scale(0.98);
+}
+
+.scroll .page-header {
+  background: #d64041;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}

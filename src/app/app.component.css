@@ -1,0 +1,58 @@
+.cover {
+  background: no-repeat center top;
+  background-size: cover;
+}
+
+.hero {
+  background-attachment: fixed;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5) 0,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.hero .container-fluid {
+  z-index: 1;
+}
+
+.popular-destinations figure {
+  margin-bottom: 30px;
+}
+
+.popular-destinations figcaption {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.popular-destinations img {
+  filter: grayscale(100%) blur(3px);
+  transition: transform 0.5s ease-in-out, filter 0.75s ease-in-out;
+}
+
+.popular-destinations a:hover img {
+  transform: scale(1.25);
+  filter: none;
+}
+
+.page-footer .footer-links {
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer .footer-child {
+    text-align: center;
+  }
+}
